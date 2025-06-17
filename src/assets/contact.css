@@ -1,0 +1,121 @@
+.contact-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .contact-header h2 {
+    font-size: 28px;
+    color: #fffaf8;
+  }
+  
+  .contact-header p {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .contact-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info h3 {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .social-icons a {
+    display: block;
+    color: #ff5733;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background: #ff5733;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .contact-form button:hover {
+    background: #e04e2f;
+  }
+  
+  /* Pop-up message */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  /* Fade-in and fade-out animation */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(10px);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+  

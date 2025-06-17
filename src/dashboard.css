@@ -1,0 +1,259 @@
+/* 📌 General Container Styling */
+/*.dashboard-container {
+    text-align: center;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* 🎉 Welcome Title 
+  .dashboard-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-container button {
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .dashboard-container button:hover {
+    background-color: #e14b4b;
+  }*/
+  
+  .dashboard-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    gap: 40px; /* 🛠️ Ensures spacing between left & right sections */
+  }
+  
+  /* 📌 Left Section - Account Details */
+  /* 📌 Left Section - Account Details (Improved UI) */
+.left-section {
+  width: 30%;
+  background: #333;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  text-align: center;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+
+
+/* 🏷️ Heading */
+.left-section h2 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* 🔹 User Info Styling */
+.left-section p {
+  font-size: 16px;
+  color: #555;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔹 Add Icons for Each Detail */
+.left-section p strong {
+  color: #222;
+  min-width: 100px;
+  display: inline-block;
+}
+
+/* 🚀 Logout Button Styling */
+.left-section button {
+  margin-top: 15px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.left-section button:hover {
+  background-color: #f8886f;
+}
+
+  
+  /* 📌 Right Section - Main Content */
+  .right-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  /* 🏋️ Workout Input & Buttons */
+  .workout-section {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* ✅ Adds space between input and button */
+    margin-bottom: 20px; /* ✅ Adds space below the section */
+  }
+  
+  .workout-section input {
+    flex: 1; /* ✅ Makes input take up available space */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .workout-section button {
+    padding: 12px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .workout-section button:hover {
+    background-color: #f8886f;
+  }
+  
+  /* 📊 Progress Chart */
+  .progress-goal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adds space between Progress & Weekly Goal */
+    width: 100%;
+  }
+  
+  /* 📈 Progress Over Time */
+  .progress-container {
+    width: 60%;
+    padding: 20px;
+    background: #eef5ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 📊 Progress Chart */
+  .progress-chart {
+    width: 100%;
+    position: relative;
+  }
+  
+  /* 🎯 Weekly Goal */
+  .weekly-goal {
+    width: 35%;
+    padding: 20px;
+    background: #f9f6f6;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🔥 Fix Goal Bar */
+  .goal-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .goal-bar {
+    height: 20px;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+  }
+  
+  .congrats-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    margin-top: 10px;
+  }
+  
+  /* 🎯 Make Layout Responsive */
+  @media (max-width: 900px) {
+    .dashboard-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+    }
+  
+    .progress-goal-container {
+      flex-direction: column;
+    }
+  
+    .progress-container, .weekly-goal {
+      width: 100%;
+    }
+  }
+  /* 💬 Chat with AI Button */
+  .chat-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .chat-btn:hover {
+    background-color: #f8886f;
+  }
+
+  .nvgt{
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+  }
+
+  .nvgt:hover{
+    background-color: #f8886f;
+  }
+  

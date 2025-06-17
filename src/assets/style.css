@@ -1,0 +1,95 @@
+/* 🔥 Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+  }
+  
+  /* 🏋️‍♂️ Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #222;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu-btn {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 24px;
+    border: none;
+  }
+  
+  /* 📱 Responsive Navbar */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+    .nav-links.open {
+      display: flex;
+    }
+    .menu-btn {
+      display: block;
+    }
+  }
+  
+  /* 🏋️‍♂️ Hero Section */
+  .hero {
+    height: 90vh;
+    background: url("https://source.unsplash.com/1600x900/?fitness,gym") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .cta-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+  }
+  
+  .cta-btn:hover{
+    background-color: #f8886f;
+  }
